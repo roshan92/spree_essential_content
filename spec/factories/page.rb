@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :page, class: Spree::Page do
     sequence(:title) { |n| "Page ##{n}" }
     sequence(:path) { |n| "pages/page-#{n}" }

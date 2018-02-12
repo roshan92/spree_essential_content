@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :upload, class: Spree::Upload do
     attachment { File.new(File.expand_path("../../../spec/factories/1.gif", __FILE__)) }
     alt ""

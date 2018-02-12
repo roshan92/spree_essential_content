@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :post_category, class: Spree::PostCategory do
     name { FFaker::Lorem.words.join ' ' }
     permalink ""

@@ -1,10 +1,10 @@
 module Spree
   module Admin
     class Spree::Admin::ContentsController < Spree::Admin::ResourceController
-      before_filter :load_resource
-      before_filter :parent, only: :index
+      before_action :load_resource
+      before_action :parent, only: :index
 
-      before_filter :load_data, only: [ :new, :edit, :create, :update ]
+      before_action :load_data, only: [ :new, :edit, :create, :update ]
 
       belongs_to 'spree/page'
 
@@ -34,7 +34,7 @@ module Spree
           params[:q] ||= {}
           params[:q][:s] ||= "position asc"
           @search = parent.contents.search(params[:q])
-          @collection = @search.result.page(params[:page]).per(Spree::Config[:orders_per_page])
+          @collection = @search.result.page(params[:page]).per(Spree::Config[:admin_orders_per_page])
         end
     end
   end

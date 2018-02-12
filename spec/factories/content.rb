@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :content, class: Spree::Content do
     association :page, factory: :page
     sequence(:title) { |n| "Page Content ##{n}" }

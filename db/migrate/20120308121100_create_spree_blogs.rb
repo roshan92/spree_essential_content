@@ -1,4 +1,4 @@
-class CreateSpreeBlogs < ActiveRecord::Migration
+class CreateSpreeBlogs < ActiveRecord::Migration[4.2]
   def self.up
     create_table :spree_blogs do |t|
       t.string     :name, :nil => false

@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :post, class: Spree::Post do
     association :blog, factory: :blog
     title { FFaker::Lorem.words.join ' ' }

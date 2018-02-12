@@ -74,15 +74,15 @@ feature "Blog Posts", js: true do
   end
 
   def and_i_have_posts
-    @post_a = FactoryGirl.create(:post)
-    @post_b = FactoryGirl.create(:post)
+    @post_a = FactoryBot.create(:post)
+    @post_b = FactoryBot.create(:post)
   end
 
   def and_i_have_posts_with_images
     and_i_have_posts
-    @post_a_image_1 = FactoryGirl.create(:post_image, viewable: @post_a)
-    @post_a_image_2 = FactoryGirl.create(:post_image, viewable: @post_a)
-    @post_b_image_1 = FactoryGirl.create(:post_image, viewable: @post_b)
+    @post_a_image_1 = FactoryBot.create(:post_image, viewable: @post_a)
+    @post_a_image_2 = FactoryBot.create(:post_image, viewable: @post_a)
+    @post_b_image_1 = FactoryBot.create(:post_image, viewable: @post_b)
   end
 
   def when_i_visit_admin_posts
@@ -102,7 +102,7 @@ feature "Blog Posts", js: true do
   end
 
   def and_i_create_a_post
-    @blog = FactoryGirl.create(:blog)
+    @blog = FactoryBot.create(:blog)
     click_link "New Post", match: :first
 
     select @blog.name, from: "post_blog_id"

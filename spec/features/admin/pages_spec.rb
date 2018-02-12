@@ -46,8 +46,8 @@ feature "Pages", js: true do
   end
 
   def and_i_have_pages
-    @page_a = FactoryGirl.create(:page)
-    @page_b = FactoryGirl.create(:page)
+    @page_a = FactoryBot.create(:page)
+    @page_b = FactoryBot.create(:page)
   end
 
   def when_i_visit_admin_pages

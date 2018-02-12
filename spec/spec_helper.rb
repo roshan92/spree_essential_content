@@ -31,7 +31,7 @@ require 'spree/testing_support/preferences'
 require 'spree/testing_support/flash'
 require 'selenium-webdriver'
 
-FactoryGirl.find_definitions
+FactoryBot.find_definitions
 
 RSpec.configure do |config|
   config.mock_with :rspec
@@ -40,7 +40,7 @@ RSpec.configure do |config|
 
   config.include Spree::TestingSupport::ControllerRequests, type: :controller
   config.include Spree::TestingSupport::UrlHelpers
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
   config.include Spree::TestingSupport::Preferences
   config.include Spree::TestingSupport::Flash
   config.include Paperclip::Shoulda::Matchers

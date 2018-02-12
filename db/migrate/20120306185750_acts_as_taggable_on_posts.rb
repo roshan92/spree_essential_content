@@ -1,4 +1,4 @@
-class ActsAsTaggableOnPosts < ActiveRecord::Migration
+class ActsAsTaggableOnPosts < ActiveRecord::Migration[4.2]
   def self.up
     return if table_exists? :tags
 
