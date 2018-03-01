@@ -37,7 +37,7 @@
     <div data-hook="admin_post_form_tag_list">
       <%= f.field_container :tag_list, class: ['form-group'] do %>
         <%= f.label :tag_list, Spree.t("essential_content.post.tags") %>
-        <%= f.date_field :tag_list, class: 'form-control title' %>
+        <%= f.text_field :tag_list, class: 'form-control title' %>
         <%= f.error_message_on :tag_list %>
       <% end %>
     </div>

@@ -1,0 +1,132 @@
+es:
+  activerecord:
+    attributes:
+      spree/post_image:
+        attachment: Adjunto
+  spree:
+    admin:
+      subnav:
+        pages: Páginas
+        posts: Publicaciones Blog
+        uploads: Medios
+        content: Contenido
+    essential_content:
+      blog:
+        name: Nombre blog
+        permalink: permalink
+      content:
+        model_name: Contenido
+        page_title: Título página
+        page: Página
+        title: Título
+        body: Cuerpo
+        attachment: Adjunto
+        link: URL Link
+        link_text: Texto Link
+        context: Contexto
+        hide_title: Esconder título
+        delete_attachment: Eliminar adjunto actual
+      page:
+        accessibility: Accesibilidad página
+        accessible: Accesible
+        contents: Contenidos
+        explain_accessible: Non-accessible pages must be coded into a custom controller.
+        explain_visible: Visible pages will show up in the main menu.
+        info: Page Information
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        meta_title: Meta Título
+        nav_title: Navigation Título
+        path: Ruta
+        preview: Previsualización
+        title: Título
+        visible: Visible
+      post:
+        author: Autor
+        body: Contenido publicación
+        live: ¿Mostrar publicación en blog?
+        post: Publicación
+        posted_at: Publicado el
+        posted_in: Blog
+        published: Es publico
+        tags: Etiquetas
+        teaser: Subtitulo
+        title: Título Publicación
+        related_to_product: Publicación relacionado a producto
+      post_category:
+        category: Categoría Publicación
+        name: Nombre Categoría
+        permalink: Permalink Categoría
+      upload:
+        upload: Medio
+        preview: Previsualización
+        link: Link a contenido
+        file_name: Nombre de archivo Medio
+        size: Tamaño Medio
+      file_name: Nombre de archivo
+      size: Tamaño
+      rss: Suscribirse via RSS
+      recent_posts: Publicaciónes recientes
+      categories: Categorías
+      tags: Etiquetas
+      comments: Comentarios
+      posted_on: Publicado el
+      by: Por
+      tagged: Etiquetado
+      no_posts: No hay publicaciones
+      setting_disqus_shortname: Nombre Disqus
+      setting_sharethis_publisher_id: ShareThis Publisher
+      setting_show_products_on_homepage: Mostrar productos en página de inicio
+      setting_show_taxons_on_homepage: Mostrar categorias en página de inicio
+      setting_show_posts_on_homepage: Mostrar publicaciones en página de inicio
+      page_content_order: Orden de contenidos de página
+      latest_products: Ultimos productos
+      admin:
+        post_image:
+          new: Nueva imagen
+          not_found: No hay imagenes
+        post_product:
+          new: Nuevo producto relacionado
+          not_found: No hay productos relacionados
+          product: Productos relacionados a Publicación
+        blog_edit: Editando Blog
+        blog_manage: Administrar Blog
+        blog_listing: Lista de Blogs
+        blog_new: Nuevo Blog
+        blog_settings: Configuraciones Blog
+        content_edit: Editar Contenido
+        content_new: Nuevo Contenido
+        contents: Contenidos
+        content_settings: Configuración Contenido
+        page_contents: Contenidos Página
+        page_details: Detalles Página
+        page_edit: Editar Página
+        page_editing: Editando Página
+        page_information: Información Página
+        page_image_editing: Editando Imagen
+        page_images: Imagenes Página
+        page_listing: Contenido Páginas
+        page_new: Nueva Página
+        post_categories: Categorias Publicación
+        post_details: Detalles Publicación
+        post_information: Información Publicación
+        post_listing: Listando Publicaciónes
+        post_new: Nueva Publicación
+        post_category_edit: Editar Categoria Publicación
+        post_category_new: Nueva Categoria Publicación
+        post_category_none_found:  No hay publicaciónes
+        post_category_manage: Administrar Categorias Publicación
+        products_related: Productos relacionados
+        upload_edit: Editar Media
+        upload_listing: Listando Medias
+        upload_new: Nueva Media
+
+  time:
+    formats:
+      date_time: "%x %X"
+      date_full: "%A %B %d, %Y"
+      detailed: "%A %B %d, %Y at %I:%M%p"
+      date_only: "%x"
+  date:
+    formats:
+      month_year: "%B %Y"
