@@ -1,6 +1,8 @@
 class Spree::Content < ActiveRecord::Base
   attr_accessor :delete_attachment
 
+  acts_as_list scope: :page
+
   belongs_to :page
   validates_associated :page
   validates_presence_of :title, :page
@@ -19,7 +21,7 @@ class Spree::Content < ActiveRecord::Base
   scope :for, Proc.new{|context| where(context: context)}
 
   before_update :delete_attachment!, if: :delete_attachment
-  before_update :reprocess_images_if_context_changed
+  # before_update :reprocess_images_if_context_changed
 
   [ :link_text, :link, :body ].each do |property|
     define_method "has_#{property.to_s}?" do
@@ -40,7 +42,7 @@ class Spree::Content < ActiveRecord::Base
   end
 
   def rendered_body
-    body.html_safe
+    body&.html_safe
   end
 
   def default_attachment_sizes

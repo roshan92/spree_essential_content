@@ -15,17 +15,7 @@
   </div>
 <% end %>
 
-<% if @config[:show_taxons_on_homepage] %>
-  <% content_for :sidebar do %>
-    <div data-hook="homepage_sidebar_navigation">
-      <%= render partial: 'spree/shared/taxonomies' %>
-    </div>
-  <% end %>
-<% end %>
-
-<% if @config[:show_products_on_homepage] %>
-  <div data-hook="homepage_products">
-    <h1><%= Spree.t('essential_content.latest_products') %></h1>
-    <%= render partial: 'spree/shared/products', locals: { products: @products } if @products %>
-  </div>
-<% end %>
+<div data-hook="homepage_products">
+  <h1><%= Spree.t('essential_content.latest_products') %></h1>
+  <%= render partial: 'spree/shared/products', locals: { products: @products } if @products %>
+</div>

@@ -1,14 +1,21 @@
 es:
   activerecord:
     attributes:
+      spree/page_image:
+        alt: Texto Alternativo
+        attachment: Adjunto
       spree/post_image:
+        alt: Texto Alternativo
+        attachment: Adjunto
+      spree/upload:
+        alt: Texto Alternativo
         attachment: Adjunto
   spree:
     admin:
       subnav:
         pages: Páginas
         posts: Publicaciones Blog
-        uploads: Medios
+        uploads: Archivos Multimedia
         content: Contenido
     essential_content:
       blog:
@@ -58,11 +65,11 @@ es:
         name: Nombre Categoría
         permalink: Permalink Categoría
       upload:
-        upload: Medio
+        upload: Archivos Multimedia
         preview: Previsualización
         link: Link a contenido
-        file_name: Nombre de archivo Medio
-        size: Tamaño Medio
+        file_name: Nombre de archivo Multimedia
+        size: Tamaño Archivo Multimedia
       file_name: Nombre de archivo
       size: Tamaño
       rss: Suscribirse via RSS
@@ -117,9 +124,9 @@ es:
         post_category_none_found:  No hay publicaciónes
         post_category_manage: Administrar Categorias Publicación
         products_related: Productos relacionados
-        upload_edit: Editar Media
-        upload_listing: Listando Medias
-        upload_new: Nueva Media
+        upload_edit: Editar Archivo Multimedia
+        upload_listing: Listando Archivos Multimedia
+        upload_new: Nueva Archivo Multimedia
 
   time:
     formats:
