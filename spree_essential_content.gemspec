@@ -1,20 +1,15 @@
 lib = File.expand_path('../lib/', __FILE__)
 $LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
 
-require 'spree_analytics_trackers/version'
 
-Gem::Specification.new do |s|
-  s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_analytics_trackers'
-  s.version     = SpreeAnalyticsTrackers.version
-  s.summary     = 'Adds analytics trackers functionality to Spree'
-  s.description = 'Supports Google Analytics '
+  s.name        = 'spree_essential_content'
+  s.version     = '3.4.0'
+  s.authors     = ["Spencer Steffen", "Nathan Lowrie"]
+  s.email       = ["spencer@citrusme.com", "nate@finelineautomation.com"]
+  s.homepage    = "https://github.com/FineLineAutomation/spree_essential_content"
+  s.summary     = 'Spree Essentials provides a CMS for Spree Commerce sites. See readme for details'
+  s.description = 'Spree Essentials provides a CMS for Spree Commerce sites. It provides static pages'
   s.required_ruby_version = '>= 2.2.7'
-
-  s.author    = 'Spark Solutions'
-  s.email     = 'we@sparksolutions.co'
-  s.homepage  = 'https://github.com/spree-contrib/spree_analytics_trackers'
-  s.license = 'BSD-3-Clause'
 
   s.require_path = 'lib'
   s.requirements << 'none'
@@ -23,6 +18,9 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'spree_backend', spree_version
   s.add_dependency 'spree_extension'
+  s.add_dependency 'warden', '~> 1.2.5'
+
+  s.add_runtime_dependency 'acts-as-taggable-on'
 
   s.add_development_dependency 'appraisal'
   s.add_development_dependency 'capybara'
@@ -38,4 +36,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'selenium-webdriver'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'sqlite3'
-end
+  s.add_development_dependency 'pry-rails'
+
